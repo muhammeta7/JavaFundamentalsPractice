@@ -6,7 +6,7 @@ public class StringUtils {
     // param valueToBeAdded value to add
     // return the concatenation of `baseValue` and `valueToBeAdded`
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return baseValue + valueToBeAdded;
+        return null;
     }
 
     // valueToBeReversed value to be reversed
