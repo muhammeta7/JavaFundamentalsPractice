@@ -6,7 +6,7 @@ public class StringUtils {
     // param valueToBeAdded value to add
     // return the concatenation of `baseValue` and `valueToBeAdded`
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        return baseValue + valueToBeAdded;
     }
 
     // valueToBeReversed value to be reversed
@@ -29,6 +29,20 @@ public class StringUtils {
 
     // Given string return last word in sentence
     public String getLastWord(String sentence) {
+        return null;
+    }
+
+    // Given a phrase, get the acronym of that phrase. Acronym is the combination of
+    // the first character of each word in upper case.
+    // For example, given "Ruby on Rails", this method will return "ROR"
+    public String acronym(String phrase) {
+        return null;
+    }
+
+    // To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
+    // intended audience. This method encrypt the message by shifting the letter by 3 characters. If the character is
+    // at the end of the alphabet, it will wraps around.
+    public String encrypt(String word) {
         return null;
     }
 
