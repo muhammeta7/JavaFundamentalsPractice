@@ -2,6 +2,36 @@ package com.JavaFundamentals.strings;
 
 public class StringUtils {
 
+    // param baseValue value to be added to
+    // param valueToBeAdded value to add
+    // return the concatenation of `baseValue` and `valueToBeAdded`
+    public String concatenate(String baseValue, String valueToBeAdded) {
+        return null;
+    }
+
+    // valueToBeReversed value to be reversed
+    // return identical string with characters in opposite order
+    public String reverseString(String valueToBeReversed) {
+        return null;
+    }
+
+    // Return middle character of word
+    public Character getMiddleCharacter(String word) {
+        return null;
+    }
+
+    // param value value to have character removed from
+    // param charToRemove character to be removed from `value`
+    // return `value` with char of value `charToRemove` removed
+    public String removeCharacter(String value, Character charToRemove) {
+        return null;
+    }
+
+    // Given string return last word in sentence
+    public String getLastWord(String sentence) {
+        return null;
+    }
+
     // Determine whether 2 strings are anagrams
     // An anagram is a word or phrase formed by rearranging the letters of a
     // different word or phrase, typically using all the original letters exactly once.
@@ -20,6 +50,11 @@ public class StringUtils {
     // Task: Sort them in ascending order
     public String[] sortStringOfInts(String[] arr){
         return arr;
+    }
+
+    // Get all substrings given a String
+    public String[] getAllSubstrings(String input){
+        return null;
     }
 
 }
