@@ -19,7 +19,7 @@ public class CapitalizeNthCharacterTest {
         Integer indexToCapitalize = 0;
 
         // when
-        String actual = StringUtils.capitalizeNthCharacter(input, indexToCapitalize);
+        String actual = stringUtils.capitalizeNthCharacter(input, indexToCapitalize);
 
         // them
         assertEquals(expected, actual);
@@ -33,7 +33,7 @@ public class CapitalizeNthCharacterTest {
         Integer indexToCapitalize = 1;
 
         // when
-        String actual = StringUtils.capitalizeNthCharacter(input, indexToCapitalize);
+        String actual = stringUtils.capitalizeNthCharacter(input, indexToCapitalize);
 
         // them
         assertEquals(expected, actual);
@@ -47,7 +47,7 @@ public class CapitalizeNthCharacterTest {
         Integer indexToCapitalize = 2;
 
         // when
-        String actual = StringUtils.capitalizeNthCharacter(input, indexToCapitalize);
+        String actual = stringUtils.capitalizeNthCharacter(input, indexToCapitalize);
 
         // them
         assertEquals(expected, actual);

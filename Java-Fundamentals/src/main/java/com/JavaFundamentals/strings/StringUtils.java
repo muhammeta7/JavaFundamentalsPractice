@@ -57,17 +57,34 @@ public class StringUtils {
     }
 
     // Capitalize Nth Character of String
-    public static String capitalizeNthCharacter(String str, Integer indexToCapitalize) {
+    public String capitalizeNthCharacter(String str, Integer indexToCapitalize) {
         return null;
     }
 
-    //
+    // return true if each Character in string occurs exactly 1 time.
+    public Boolean isIsogram(String str) {
+        return null;
+    }
+
+    // return true if string contains two identical characters in adjacent indices.
+    public Boolean hasDuplicateConsecutiveCharacters(String str) {
+        return null;
+    }
+
+    // return near-identical String with each occurrence of duplicate-adjacent characters removed.
+    public String removeConsecutiveDuplicateCharacters(String str) {
+        return null;
+    }
+
+    public String invertCasing(String str) {
+        return null;
+    }
 
     // Given two strings of integers, return the string which is of
     // greater value (no using BigInteger or BigDecimal or parseInt)
     // valueOf not allowed
     public String stringToIntegerCompare(String integer1, String integer2){
-        return integer1;
+        return null;
     }
 
     // Given: an array of numbers but stored as strings.
