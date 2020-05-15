@@ -29,5 +29,13 @@ public class IntegerUtilsTest {
         assertFalse(integerUtils.isPrime(250));
     }
 
-
+    @Test
+    public void fibonacciTest(){
+        assertEquals(integerUtils.fibonacci(10),55);
+        assertEquals(integerUtils.fibonacci(30),832040);
+        assertEquals(integerUtils.fibonacci(20),610);
+        assertEquals(integerUtils.fibonacciRecursive(10),55);
+        assertEquals(integerUtils.fibonacciRecursive(30),832040);
+        assertEquals(integerUtils.fibonacciRecursive(20),610);
+    }
 }
