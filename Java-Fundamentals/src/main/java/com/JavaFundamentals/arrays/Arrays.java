@@ -23,4 +23,11 @@ public class Arrays {
     public Integer mostCommon(Integer[] array) {
         return null;
     }
+
+    // Given array of integers and squared values
+    // Determine if inputArray[i] = squaredValues[j]
+    public Boolean compareSquareArray(Integer[] inputArray, Integer[] squaredValues) {
+        return null;
+    }
+
 }

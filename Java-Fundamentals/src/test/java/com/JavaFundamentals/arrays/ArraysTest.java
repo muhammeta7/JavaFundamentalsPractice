@@ -137,4 +137,19 @@ public class ArraysTest {
         //Then
         assertEquals(commonValue, actual);
     }
+
+    @Test
+    public void compareSquareArray(){
+        Integer[] array = {1, 2, 3};
+        Integer[] arraySquared = {1, 4, 9};
+        assertTrue(arrays.compareSquareArray(array, arraySquared));
+
+        Integer[] array1 = {3, 4, 5};
+        Integer[] arraySquared1 = {9, 16, 25};
+        assertTrue(arrays.compareSquareArray(array1, arraySquared1));
+
+        Integer[] array2 = {3, 4, 5};
+        Integer[] arraySquared2 = {11, 16, 25};
+        assertFalse(arrays.compareSquareArray(array2, arraySquared2));
+    }
 }
