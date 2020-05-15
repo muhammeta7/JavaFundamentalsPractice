@@ -1,5 +1,8 @@
 package com.JavaFundamentals.strings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringUtils {
 
     // param baseValue value to be added to
@@ -68,7 +71,13 @@ public class StringUtils {
 
     // Get all substrings given a String
     public String[] getAllSubstrings(String input){
-        return null;
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i+1 ; j <= input.length() ; j++) {
+                result.add(input.substring(i,j));
+            }
+        }
+        return result.toArray(new String[0]);
     }
 
 }
