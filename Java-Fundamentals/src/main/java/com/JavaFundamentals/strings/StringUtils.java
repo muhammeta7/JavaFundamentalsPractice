@@ -75,7 +75,7 @@ public class StringUtils {
     public String removeConsecutiveDuplicateCharacters(String str) {
         return null;
     }
-
+    // Invert casing of String
     public String invertCasing(String str) {
         return null;
     }
