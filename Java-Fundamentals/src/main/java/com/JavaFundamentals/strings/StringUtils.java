@@ -56,6 +56,13 @@ public class StringUtils {
         return false;
     }
 
+    // Capitalize Nth Character of String
+    public static String capitalizeNthCharacter(String str, Integer indexToCapitalize) {
+        return null;
+    }
+
+    //
+
     // Given two strings of integers, return the string which is of
     // greater value (no using BigInteger or BigDecimal or parseInt)
     // valueOf not allowed
@@ -71,13 +78,7 @@ public class StringUtils {
 
     // Get all substrings given a String
     public String[] getAllSubstrings(String input){
-        List<String> result = new ArrayList<>();
-        for (int i = 0; i < input.length(); i++) {
-            for (int j = i+1 ; j <= input.length() ; j++) {
-                result.add(input.substring(i,j));
-            }
-        }
-        return result.toArray(new String[0]);
+        return null;
     }
 
 }
