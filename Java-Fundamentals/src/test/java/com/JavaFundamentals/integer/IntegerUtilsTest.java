@@ -38,4 +38,20 @@ public class IntegerUtilsTest {
         assertEquals(integerUtils.fibonacciRecursive(30),832040);
         assertEquals(integerUtils.fibonacciRecursive(20),610);
     }
+
+    @Test
+    public void reverseIntTest(){
+        int expected = 12345;
+        int expected1 = 678;
+        int expected2 = 8902;
+        int expected3 = 9826;
+        int actual = integerUtils.reverseInt(expected);
+        int actual1 = integerUtils.reverseInt(expected1);
+        int actual2 = integerUtils.reverseInt(expected2);
+        int actual3 = integerUtils.reverseInt(expected3);
+        assertEquals(expected, actual);
+        assertEquals(expected1, actual1);
+        assertEquals(expected2, actual2);
+        assertEquals(expected3, actual3);
+    }
 }

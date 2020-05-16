@@ -21,4 +21,10 @@ public class IntegerUtils {
     public int fibonacciRecursive(int n){
         return 0;
     }
+
+    // Reverse an integer
+    public int reverseInt(int input){
+        return 0;
+    }
+
 }
