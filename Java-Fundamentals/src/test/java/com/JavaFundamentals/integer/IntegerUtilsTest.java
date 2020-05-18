@@ -25,6 +25,7 @@ public class IntegerUtilsTest {
         assertTrue(integerUtils.isPrime(19));
         assertTrue(integerUtils.isPrime(37));
         assertFalse(integerUtils.isPrime(0));
+        assertFalse(integerUtils.isPrime(1));
         assertFalse(integerUtils.isPrime(100));
         assertFalse(integerUtils.isPrime(250));
     }
@@ -33,10 +34,10 @@ public class IntegerUtilsTest {
     public void fibonacciTest(){
         assertEquals(integerUtils.fibonacci(10),55);
         assertEquals(integerUtils.fibonacci(30),832040);
-        assertEquals(integerUtils.fibonacci(20),610);
+        assertEquals(integerUtils.fibonacci(20),6765);
         assertEquals(integerUtils.fibonacciRecursive(10),55);
         assertEquals(integerUtils.fibonacciRecursive(30),832040);
-        assertEquals(integerUtils.fibonacciRecursive(20),610);
+        assertEquals(integerUtils.fibonacciRecursive(20),6765);
     }
 
     @Test
