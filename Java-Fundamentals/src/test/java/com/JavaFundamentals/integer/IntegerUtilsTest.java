@@ -25,6 +25,7 @@ public class IntegerUtilsTest {
         assertTrue(integerUtils.isPrime(19));
         assertTrue(integerUtils.isPrime(37));
         assertFalse(integerUtils.isPrime(0));
+        assertFalse(integerUtils.isPrime(1));
         assertFalse(integerUtils.isPrime(100));
         assertFalse(integerUtils.isPrime(250));
     }
