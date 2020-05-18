@@ -30,4 +30,9 @@ public class Arrays {
         return null;
     }
 
+    // Return range between 2 closest numbers
+    public Integer rangeClosestNumbers(Integer[] array){
+        return 0;
+    }
+
 }

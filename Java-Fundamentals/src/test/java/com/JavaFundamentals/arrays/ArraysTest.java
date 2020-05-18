@@ -152,4 +152,28 @@ public class ArraysTest {
         Integer[] arraySquared2 = {11, 16, 25};
         assertFalse(arrays.compareSquareArray(array2, arraySquared2));
     }
+
+    @Test
+    public void rangeClosestNumbersTest1(){
+        Integer[] array = {5, 1, 8, 4, 2};
+        int expected = 1;
+        int actual = arrays.rangeClosestNumbers(array);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void rangeClosestNumbersTest2(){
+        Integer[] array = {2, 4, 7, 11, 2};
+        int expected = 0;
+        int actual = arrays.rangeClosestNumbers(array);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void rangeClosestNumbersTest3(){
+        Integer[] array = {2, 4, 7, 11, 23};
+        int expected = 2;
+        int actual = arrays.rangeClosestNumbers(array);
+        assertEquals(expected, actual);
+    }
 }
