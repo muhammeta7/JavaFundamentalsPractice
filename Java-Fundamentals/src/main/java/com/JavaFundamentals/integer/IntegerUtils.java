@@ -45,7 +45,12 @@ public class IntegerUtils {
 
     // Reverse an integer
     public int reverseInt(int input){
-        return 0;
+        int rev = 0;
+        while( input > 0){
+            rev = rev * 10 + input % 10;
+            input /= 10;
+        }
+        return rev;
     }
 
 }

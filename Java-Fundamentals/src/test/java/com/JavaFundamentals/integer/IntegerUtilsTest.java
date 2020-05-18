@@ -42,14 +42,14 @@ public class IntegerUtilsTest {
 
     @Test
     public void reverseIntTest(){
-        int expected = 12345;
-        int expected1 = 678;
-        int expected2 = 8902;
-        int expected3 = 9826;
-        int actual = integerUtils.reverseInt(expected);
-        int actual1 = integerUtils.reverseInt(expected1);
-        int actual2 = integerUtils.reverseInt(expected2);
-        int actual3 = integerUtils.reverseInt(expected3);
+        int expected = 54321;
+        int expected1 = 876;
+        int expected2 = 2098;
+        int expected3 = 6289;
+        int actual = integerUtils.reverseInt(12345);
+        int actual1 = integerUtils.reverseInt(678);
+        int actual2 = integerUtils.reverseInt(8902);
+        int actual3 = integerUtils.reverseInt(9826);
         assertEquals(expected, actual);
         assertEquals(expected1, actual1);
         assertEquals(expected2, actual2);
