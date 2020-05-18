@@ -16,5 +16,8 @@ public class SortUtils {
         return 0;
     }
 
-
+    // Merge sort
+    public int[] mergeSort(int[] array){
+        return null;
+    }
 }

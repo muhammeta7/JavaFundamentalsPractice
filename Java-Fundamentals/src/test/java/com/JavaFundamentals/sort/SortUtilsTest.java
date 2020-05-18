@@ -51,4 +51,19 @@ public class SortUtilsTest {
         assertEquals(sorter.binarySearch(expected2, 6), 3);
         assertEquals(sorter.binarySearch(expected3, 27), 1);
     }
+
+    @Test
+    public void mergeSortTest(){
+        int[] arr1 = {10,9,8,7,6,5,4,3,2,1};
+        int[] expected1 = {1,2,3,4,5,6,7,8,9,10};
+        assertArrayEquals(sorter.mergeSort(arr1), expected1);
+
+        int[] arr2 = {7,5,2,3,6};
+        int[] expected2 = {2,3,5,6,7};
+        assertArrayEquals(sorter.mergeSort(arr2), expected2);
+
+        int[] arr3 = {50,23,27,38,44};
+        int[] expected3 = {23,27,38,44,50};
+        assertArrayEquals(sorter.mergeSort(arr3), expected3);
+    }
 }

@@ -27,5 +27,11 @@ public class GenericsTest<T extends Comparable<? super T>> {
         assertArrayEquals(expected, actual);
     }
 
-
+    @Test
+    public void bubbleSortDoubleTest(){
+        Double[] doubles = {1.51, 1.23, 1.35, .32, .56};
+        Double[] expected = {.32, .56, 1.23, 1.35, 1.51};
+        Double[] actual = (Double[]) generics.bubbleSort(doubles);
+        assertArrayEquals(expected, actual);
+    }
 }
