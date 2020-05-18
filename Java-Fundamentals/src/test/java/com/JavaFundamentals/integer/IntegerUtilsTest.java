@@ -31,12 +31,14 @@ public class IntegerUtilsTest {
 
     @Test
     public void fibonacciTest(){
+        assertEquals(integerUtils.fibonacci(1),1);
         assertEquals(integerUtils.fibonacci(10),55);
         assertEquals(integerUtils.fibonacci(30),832040);
-        assertEquals(integerUtils.fibonacci(20),610);
+        assertEquals(integerUtils.fibonacci(20),6765);
+        assertEquals(integerUtils.fibonacciRecursive(1),1);
         assertEquals(integerUtils.fibonacciRecursive(10),55);
         assertEquals(integerUtils.fibonacciRecursive(30),832040);
-        assertEquals(integerUtils.fibonacciRecursive(20),610);
+        assertEquals(integerUtils.fibonacciRecursive(20),6765);
     }
 
     @Test
