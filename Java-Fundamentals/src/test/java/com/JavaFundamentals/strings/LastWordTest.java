@@ -16,7 +16,10 @@ public class LastWordTest {
         // Given
         String sentence = "We assume chemical evolution is a sufficient explanation.";
         String expected = "explanation.";
-
+//        String[] array = sentence.split(" ");
+//        for(String s: array){
+//            System.out.println(s);
+//        }
         // When
         String actual = stringUtils.getLastWord(sentence);
 

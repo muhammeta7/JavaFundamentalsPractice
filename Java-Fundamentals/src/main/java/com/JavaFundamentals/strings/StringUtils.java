@@ -32,7 +32,8 @@ public class StringUtils {
 
     // Given string return last word in sentence
     public String getLastWord(String sentence) {
-        return null;
+        String[] array = sentence.split("  ");
+        return array[array.length-1];
     }
 
     // Given a phrase, get the acronym of that phrase. Acronym is the combination of
@@ -93,9 +94,17 @@ public class StringUtils {
         return arr;
     }
 
-    // Get all substrings given a String
+    // Get all distinct substrings given a String
     public String[] getAllSubstrings(String input){
-        return null;
+        List<String> array = new ArrayList<>();
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i+1; j <= input.length() ; j++) {
+                if(!array.contains(input.substring(i, j))){
+                    array.add(input.substring(i, j));
+                }
+            }
+        }
+        return array.toArray(new String[0]);
     }
 
 }
