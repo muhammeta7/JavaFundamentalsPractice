@@ -13,7 +13,7 @@ public class GetAllSubstringsTest {
 
     @Test
     public void test0(){
-        String[] expected = {"A", "Ap", "App", "Appl", "Apple", "p", "pp", "ppl", "pple", "p", "pl", "ple", "l", "le", "e"};
+        String[] expected = {"A", "Ap", "App", "Appl", "Apple", "p", "pp", "ppl", "pple", "pl", "ple", "l", "le", "e"};
         String[] actual = stringUtils.getAllSubstrings("Apple");
         assertArrayEquals(expected, actual);
     }
@@ -62,7 +62,7 @@ public class GetAllSubstringsTest {
     public void test4() {
         // given
         String input = "ABB";
-        String[] expected = {"A", "AB", "ABB", "B", "BB", "B"};
+        String[] expected = {"A", "AB", "ABB", "B", "BB"};
 
         // when
         String[] actual = stringUtils.getAllSubstrings(input);
@@ -76,7 +76,7 @@ public class GetAllSubstringsTest {
     public void test5() {
         // given
         String input = "AABB";
-        String[] expected = {"A", "AA", "AAB", "AABB","A", "AB", "ABB", "B", "BB", "B"};
+        String[] expected = {"A", "AA", "AAB", "AABB", "AB", "ABB", "B", "BB"};
 
         // when
         String[] actual = stringUtils.getAllSubstrings(input);

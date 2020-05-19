@@ -93,7 +93,7 @@ public class StringUtils {
         return arr;
     }
 
-    // Get all substrings given a String
+    // Get all distinct substrings given a String
     public String[] getAllSubstrings(String input){
         return null;
     }
