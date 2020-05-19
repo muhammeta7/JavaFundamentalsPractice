@@ -9,18 +9,18 @@ public class StringUtils {
     // param valueToBeAdded value to add
     // return the concatenation of `baseValue` and `valueToBeAdded`
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        return baseValue + valueToBeAdded;
     }
 
     // valueToBeReversed value to be reversed
     // return identical string with characters in opposite order
     public String reverseString(String valueToBeReversed) {
-        return null;
+        return new StringBuilder(valueToBeReversed).reverse().toString();
     }
 
     // Return middle character of word
     public Character getMiddleCharacter(String word) {
-        return null;
+        return word.charAt(word.length()/2);
     }
 
     // param value value to have character removed from
