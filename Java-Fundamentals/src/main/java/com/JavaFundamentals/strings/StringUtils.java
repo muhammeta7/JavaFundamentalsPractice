@@ -107,11 +107,30 @@ public class StringUtils {
 
     // return near-identical String with each occurrence of duplicate-adjacent characters removed.
     public String removeConsecutiveDuplicateCharacters(String str) {
-        return null;
+        String result = "";
+        int index = 0;
+        for (int i = 1; i < str.length() ; i++) {
+            if(str.charAt(i) == str.charAt(i-1)){
+                result += str.substring(index, i-1);
+                index = 1 + i;
+            }
+        }
+        result += str.substring(index);
+        return result;
     }
     // Invert casing of String
     public String invertCasing(String str) {
-        return null;
+        String[] arr = str.split("");
+        String result = "";
+        for (String s : arr){
+            System.out.println(s);
+            if(Character.isUpperCase(s.charAt(0))){
+                result += s.toLowerCase();
+            } else{
+                result += s.toUpperCase();
+            }
+        }
+        return result;
     }
 
     // Given two strings of integers, return the string which is of
