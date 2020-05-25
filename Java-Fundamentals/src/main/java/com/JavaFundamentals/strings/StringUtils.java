@@ -54,12 +54,24 @@ public class StringUtils {
     // An anagram is a word or phrase formed by rearranging the letters of a
     // different word or phrase, typically using all the original letters exactly once.
     public boolean isAnagram(String input1, String input2){
-        return false;
+        String one = input1.toLowerCase();
+        String two = input2.toLowerCase();
+        if(input1.length() != input2.length()){
+            return false;
+        }
+        int sum = 0;
+        for (int i = 0; i < input1.length() ; i++) {
+            sum += Math.pow((int)one.charAt(i), 2);
+            sum -= Math.pow((int)two.charAt(i), 2);
+        }
+        return sum == 0;
     }
 
     // Capitalize Nth Character of String
     public String capitalizeNthCharacter(String str, Integer indexToCapitalize) {
-        return null;
+        String result = "";
+        result += str.substring(0, indexToCapitalize) + Character.toUpperCase(str.charAt(indexToCapitalize))+ str.substring(indexToCapitalize+1);
+        return result;
     }
 
     // return true if each Character in string occurs exactly 1 time.
