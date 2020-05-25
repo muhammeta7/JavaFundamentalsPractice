@@ -1,7 +1,7 @@
 package com.JavaFundamentals.strings;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class StringUtils {
 
@@ -92,7 +92,11 @@ public class StringUtils {
 
     // return true if each Character in string occurs exactly 1 time.
     public Boolean isIsogram(String str) {
-        return null;
+        Set<Character> result = new HashSet<>();
+        for (int i = 0; i < str.length(); i++) {
+            result.add(str.charAt(i));
+        }
+        return str.length() == result.size();
     }
 
     // return true if string contains two identical characters in adjacent indices.
@@ -143,6 +147,12 @@ public class StringUtils {
     // Given: an array of numbers but stored as strings.
     // Task: Sort them in ascending order
     public String[] sortStringOfInts(String[] arr){
+        Arrays.sort(arr, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return Integer.valueOf(o1).compareTo(Integer.valueOf(o2));
+            }
+        });
         return arr;
     }
 
