@@ -42,14 +42,28 @@ public class StringUtils {
     // the first character of each word in upper case.
     // For example, given "Ruby on Rails", this method will return "ROR"
     public String acronym(String phrase) {
-        return null;
+        String acronym = "";
+        String[] words = phrase.split(" ");
+        for (String word : words) {
+            acronym += word.charAt(0);
+        }
+        return acronym.toUpperCase();
     }
 
     // To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
     // intended audience. This method encrypt the message by shifting the letter by 3 characters. If the character is
     // at the end of the alphabet, it will wraps around.
     public String encrypt(String word) {
-        return null;
+        String encrypt = "";
+        for (int i = 0; i < word.length(); i++) {
+            char letter = word.charAt(i);
+            if ( letter == 'x' || letter == 'y' || letter == 'z') {
+                letter -= 26;
+            }
+            letter += 3;
+            encrypt += letter;
+        }
+        return encrypt;
     }
 
     // Determine whether 2 strings are anagrams
@@ -83,7 +97,12 @@ public class StringUtils {
 
     // return true if string contains two identical characters in adjacent indices.
     public Boolean hasDuplicateConsecutiveCharacters(String str) {
-        return null;
+        for (int i = 1; i < str.length(); i++) {
+            if(str.charAt(i) == str.charAt(i-1)){
+                return true;
+            }
+        }
+        return false;
     }
 
     // return near-identical String with each occurrence of duplicate-adjacent characters removed.
