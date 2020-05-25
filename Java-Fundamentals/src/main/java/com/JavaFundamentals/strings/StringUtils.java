@@ -27,7 +27,9 @@ public class StringUtils {
     // param charToRemove character to be removed from `value`
     // return `value` with char of value `charToRemove` removed
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+        String getChar = String.valueOf( charToRemove );
+        String modifiedWord = value.replace( getChar, "" );
+        return modifiedWord;
     }
 
     // Given string return last word in sentence
