@@ -120,7 +120,17 @@ public class StringUtils {
     }
     // Invert casing of String
     public String invertCasing(String str) {
-        return null;
+        String[] arr = str.split("");
+        String result = "";
+        for (String s : arr){
+            System.out.println(s);
+            if(Character.isUpperCase(s.charAt(0))){
+                result += s.toLowerCase();
+            } else{
+                result += s.toUpperCase();
+            }
+        }
+        return result;
     }
 
     // Given two strings of integers, return the string which is of
