@@ -34,7 +34,18 @@ public class Arrays {
 
     // Count the number of occurrences in 2 arrays
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
-        return null;
+        int counter = 0;
+        for(Integer i : array1){
+            if(i == valueToEvaluate){
+                counter++;
+            }
+        }
+        for(Integer i : array2){
+            if(i == valueToEvaluate){
+                counter++;
+            }
+        }
+        return counter;
     }
 
     // Most common integer
