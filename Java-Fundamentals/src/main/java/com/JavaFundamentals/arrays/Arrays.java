@@ -1,9 +1,21 @@
 package com.JavaFundamentals.arrays;
 
+import java.lang.reflect.Array;
+
 public class Arrays {
     // Merge 2 arrays
     public Integer[] mergeArrays(Integer[] array1, Integer[] array2){
-        return null;
+        Integer[] merged = new Integer[array1.length + array2.length];
+        int index = 0;
+        for(Integer i : array1){
+            merged[index] = i;
+            index++;
+        }
+        for(Integer i : array2){
+            merged[index] = i;
+            index++;
+        }
+        return merged;
     }
 
     //  Given an array and a number, rotate the content to the left as many times as the number given.

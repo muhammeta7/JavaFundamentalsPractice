@@ -21,7 +21,7 @@ public class ArraysTest {
 
         Integer[] array3 = {5, 1, 8, 9, 10};
         Integer[] array4 = {4, 2, 11};
-        Integer[] expected1 = {9, 10, 11, 5, 1, 8, 4, 2};
+        Integer[] expected1 = {5, 1, 8, 9, 10, 4, 2, 11};
         Integer[] actual1 = arrays.mergeArrays(array3, array4);
         assertArrayEquals(expected1, actual1);
     }
