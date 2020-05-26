@@ -1,7 +1,5 @@
 package com.JavaFundamentals.arrays;
 
-import java.lang.reflect.Array;
-
 public class Arrays {
     // Merge 2 arrays
     public Integer[] mergeArrays(Integer[] array1, Integer[] array2){
@@ -23,7 +21,15 @@ public class Arrays {
     //  calling arrays.rotate(array, 2); will move the first two
     //  numbers to the back so the returning array looks like this: {2, 18, 5, 4}.
     public Integer[] rotate(Integer[] array, Integer index) {
-        return null;
+        Integer[] shifted = new Integer[array.length];
+        for (int i = 0; i < array.length; i++) {
+            if(i-index < 0){
+                shifted[array.length-index+i] = array[i];
+            }else{
+                shifted[i-index] = array[i];
+            }
+        }
+        return shifted;
     }
 
     // Count the number of occurrences in 2 arrays
