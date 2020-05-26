@@ -1,5 +1,11 @@
 package com.JavaFundamentals.arrays;
 
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
+import static java.util.Arrays.asList;
+
 public class Arrays {
     // Merge 2 arrays
     public Integer[] mergeArrays(Integer[] array1, Integer[] array2){
@@ -50,12 +56,47 @@ public class Arrays {
 
     // Most common integer
     public Integer mostCommon(Integer[] array) {
-        return null;
+        Map<Integer, Integer> mostMap = new TreeMap<>();
+        int nullCount = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] != null){
+                Integer count = mostMap.get(array[i]);
+                if(count == null) {
+                    mostMap.put(array[i], 1);
+                } else {
+                    mostMap.put(array[i], count++);
+                }
+            }
+            else {
+                nullCount++;
+            }
+
+        }
+
+        Integer maxKey = null;
+        int maxValue = 0;
+
+        for(Map.Entry<Integer, Integer> e : mostMap.entrySet()){
+            if(e.getValue() >= maxValue){
+                maxKey = e.getKey();
+                maxValue = e.getValue();
+            }
+        }
+        if(nullCount > maxValue){
+            return null;
+        }
+
+        return maxKey;
     }
 
     // Given array of integers and squared values
     // Determine if inputArray[i] = squaredValues[j]
     public Boolean compareSquareArray(Integer[] inputArray, Integer[] squaredValues) {
+        ArrayList<Integer> inputSquared = new ArrayList<>(asList(squaredValues));
+        for(Integer i : inputArray){
+            return inputSquared.contains(i*i);
+        }
         return null;
     }
 
