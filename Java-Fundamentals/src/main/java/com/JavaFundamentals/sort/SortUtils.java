@@ -39,7 +39,19 @@ public class SortUtils {
 
     // Return index of num in sorted array
     public int binarySearch(int[] array, int num){
-        return 0;
+        int l = 0;
+        int r = array.length - 1;
+        while(l <= r){
+            int m = (l + r) / 2;
+            if(array[m] == num){
+                return m;
+            } else if(array[m] < num){
+                l = m + 1;
+            } else {
+                r = m -1;
+            }
+        }
+        return -1;
     }
 
     // Merge sort
