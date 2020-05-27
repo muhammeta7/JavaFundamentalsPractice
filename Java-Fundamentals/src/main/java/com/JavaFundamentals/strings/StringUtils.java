@@ -142,7 +142,21 @@ public class StringUtils {
     // Example: instead of {9, 8} you have {“9”, “8”, “15”}
     // {“5”, “33333333333333”}
     public String[] stringToIntegerCompare(String[] array){
-        return null;
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n-i-1; j++) {
+                if(array[j].compareTo(array[j+1]) > 0 && array[j].length() == array[j+1].length()){
+                    String temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                } else if(array[j].length() > array[j+1].length()) {
+                    String temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        return array;
     }
 
     // Given: an array of numbers but stored as strings.
