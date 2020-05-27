@@ -102,7 +102,14 @@ public class Arrays {
 
     // Return range between 2 closest numbers
     public Integer rangeClosestNumbers(Integer[] array){
-        return 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1 + i; j < array.length; j++) {
+                if(Math.abs(array[i]-array[j]) < min)
+                    min = Math.abs(array[i]-array[j]);
+            }
+        }
+        return min;
     }
 
 }
