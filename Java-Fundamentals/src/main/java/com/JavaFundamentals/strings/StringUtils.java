@@ -83,7 +83,7 @@ public class StringUtils {
     // Given two strings of integers, return the string which is of
     // greater value (no using BigInteger or BigDecimal or parseInt)
     // valueOf not allowed
-    public String stringToIntegerCompare(String integer1, String integer2){
+    public String[] stringToIntegerCompare(String[] input){
         return null;
     }
 
