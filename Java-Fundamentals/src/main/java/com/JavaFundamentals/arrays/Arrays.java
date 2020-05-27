@@ -1,9 +1,7 @@
 package com.JavaFundamentals.arrays;
-
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
-
 import static java.util.Arrays.asList;
 
 public class Arrays {
