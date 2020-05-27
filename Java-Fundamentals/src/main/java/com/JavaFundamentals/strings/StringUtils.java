@@ -137,10 +137,11 @@ public class StringUtils {
         return result;
     }
 
-    // Given two strings of integers, return the string which is of
-    // greater value (no using BigInteger or BigDecimal or parseInt)
-    // valueOf not allowed
-    public String stringToIntegerCompare(String integer1, String integer2){
+    // Given: an array of numbers but stored as strings.
+    // Task: Sort them in ascending order
+    // Example: instead of {9, 8} you have {“9”, “8”, “15”}
+    // {“5”, “33333333333333”}
+    public String[] stringToIntegerCompare(String[] array){
         return null;
     }
 
