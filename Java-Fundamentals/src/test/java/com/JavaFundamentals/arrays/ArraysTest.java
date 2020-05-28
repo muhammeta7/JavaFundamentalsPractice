@@ -176,4 +176,27 @@ public class ArraysTest {
         int actual = arrays.rangeClosestNumbers(array);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void twoSumTest(){
+        int[] input = {2, 7, 11, 15};
+        int[] expected = {0, 1};
+        int[] actual = arrays.twoSum(input, 9);
+        assertArrayEquals(expected, actual);
+
+        int[] input1 = {2, 7, 11, 15};
+        int[] expected1 = {2, 3};
+        int[] actual1 = arrays.twoSum(input1, 26);
+        assertArrayEquals(expected1, actual1);
+
+        int[] input2 = {2, 7, 11, 15};
+        int[] expected2 = {1, 2};
+        int[] actual2 = arrays.twoSum(input2, 18);
+        assertArrayEquals(expected2, actual2);
+
+        int[] input3 = {2, 7, 11, 15, 10};
+        int[] expected3 = {1, 2};
+        int[] actual3 = arrays.twoSum(input3, 21);
+        assertArrayEquals(expected3, actual3);
+    }
 }
