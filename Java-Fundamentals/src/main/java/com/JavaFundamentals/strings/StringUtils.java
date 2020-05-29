@@ -10,6 +10,14 @@ public class StringUtils {
         return baseValue + valueToBeAdded;
     }
 
+    // Given a string s consists of upper/lower-case alphabets and empty space characters ' ',
+    // return the length of last word (last word means the last appearing word if we loop from left to right) in the string.
+    //If the last word does not exist, return 0.
+    public int lengthOfLastWord(String s){
+        String[] array = s.split(" ");
+        return array.length==0?0:array[array.length-1].length();
+    }
+
     // valueToBeReversed value to be reversed
     // return identical string with characters in opposite order
     public String reverseString(String valueToBeReversed) {
