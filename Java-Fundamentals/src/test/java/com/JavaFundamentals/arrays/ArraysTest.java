@@ -199,4 +199,27 @@ public class ArraysTest {
         int[] actual3 = arrays.twoSum(input3, 21);
         assertArrayEquals(expected3, actual3);
     }
+
+    @Test
+    public void removeDuplicatesLengthTest(){
+        int[] input = {1,1,2,2,3,3,4,4};
+        int expected = 4;
+        int actual = arrays.removeDuplicatesLength(input);
+        assertEquals(expected, actual);
+
+        int[] input1 = {1,1,2,3,4,5,5,6};
+        int expected1 = 6;
+        int actual1 = arrays.removeDuplicatesLength(input1);
+        assertEquals(expected1, actual1);
+
+        int[] input2 = {1,1,2,2,3,4,5,6,6,7};
+        int expected2 = 7;
+        int actual2 = arrays.removeDuplicatesLength(input2);
+        assertEquals(expected2, actual2);
+
+        int[] input3 = {0};
+        int expected3 = 1;
+        int actual3 = arrays.removeDuplicatesLength(input3);
+        assertEquals(expected3, actual3);
+    }
 }
