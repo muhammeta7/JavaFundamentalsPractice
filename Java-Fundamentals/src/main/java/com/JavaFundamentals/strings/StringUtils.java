@@ -190,4 +190,9 @@ public class StringUtils {
         return array.toArray(new String[0]);
     }
 
+    // Determine if word is Palindrome
+    public boolean isPalindrome(String s){
+        return s.equals(new StringBuilder(s).reverse().toString());
+    }
+
 }
