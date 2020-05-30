@@ -245,4 +245,27 @@ public class ArraysTest {
         String actual3 = arrays.longestCommonPrefix(input3);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void removeElementTest(){
+        int[] input = {1,2,3,4,5,2,2};
+        int expected = 4;
+        int actual = arrays.removeElement(input, 2);
+        assertEquals(expected, actual);
+
+        int[] input1 = {1,3,3,4,5,2,5,6};
+        int expected1 = 6;
+        int actual1 = arrays.removeElement(input1, 3);
+        assertEquals(expected1, actual1);
+
+        int[] input2 = {1,2,3,4,5};
+        int expected2 = 4;
+        int actual2 = arrays.removeElement(input2, 1);
+        assertEquals(expected2, actual2);
+
+        int[] input3 = {1,1,1,2,3};
+        int expected3 = 2;
+        int actual3 = arrays.removeElement(input3, 1);
+        assertEquals(expected3, actual3);
+    }
 }
