@@ -203,17 +203,17 @@ public class ArraysTest {
     @Test
     public void removeDuplicatesLengthTest(){
         int[] input = {1,1,2,2,3,3,4,4};
-        int expected = 3;
+        int expected = 4;
         int actual = arrays.removeDuplicatesLength(input);
         assertEquals(expected, actual);
 
         int[] input1 = {1,1,2,3,4,5,5,6};
-        int expected1 = 5;
+        int expected1 = 6;
         int actual1 = arrays.removeDuplicatesLength(input1);
         assertEquals(expected1, actual1);
 
         int[] input2 = {1,1,2,2,3,4,5,6,6,7};
-        int expected2 = 6;
+        int expected2 = 7;
         int actual2 = arrays.removeDuplicatesLength(input2);
         assertEquals(expected2, actual2);
 
