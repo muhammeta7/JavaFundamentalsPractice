@@ -105,4 +105,9 @@ public class StringUtils {
         return null;
     }
 
+    // Determine if word is Palindrome
+    public boolean isPalindrome(String s){
+        return false;
+    }
+
 }
