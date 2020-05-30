@@ -143,6 +143,29 @@ public class Arrays {
     // Write a function to find the longest common prefix string amongst an array of strings.
     // If there is no common prefix, return an empty string "".
     public String longestCommonPrefix(String[] strings){
-        return null;
+        if(strings.length < 1 || strings == null){
+            return "";
+        }
+        if(strings.length == 1){
+            return strings[0];
+        }
+        // Find shortest string
+        int shortest = 0;
+        int len = strings[0].length();
+        for (int i = 1; i < strings.length; i++) {
+            int curLen = strings[i].length();
+            if (curLen < len) {
+                len = curLen;
+                shortest = i;
+            }
+        }
+        // Find the longest common prefix
+        String sub = strings[shortest];
+        for (int i = 0; i < strings.length; i++) {
+            while (strings[i].indexOf(sub) != 0) {
+                sub = sub.substring(0, sub.length()-1);
+            }
+        }
+        return sub;
     }
 }
