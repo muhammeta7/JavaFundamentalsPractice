@@ -27,4 +27,9 @@ public class IntegerUtils {
         return 0;
     }
 
+    // Determine whether an integer is a palindrome. An integer is a palindrome
+    // when it reads the same backward as forward.
+    public boolean isPalindrome(int num) {
+        return true;
+    }
 }

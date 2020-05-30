@@ -56,4 +56,26 @@ public class IntegerUtilsTest {
         assertEquals(expected2, actual2);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void isPalindromeTest(){
+        int one = 121;
+        int two = 34543;
+        int three = 0;
+        int four = 1234;
+        int five = 28930;
+        int six = 244563;
+        boolean actual1 = integerUtils.isPalindrome(one);
+        boolean actual2 = integerUtils.isPalindrome(two);
+        boolean actual3 = integerUtils.isPalindrome(three);
+        boolean actual4 = integerUtils.isPalindrome(four);
+        boolean actual5 = integerUtils.isPalindrome(five);
+        boolean actual6 = integerUtils.isPalindrome(six);
+        assertTrue(actual1);
+        assertTrue(actual2);
+        assertTrue(actual3);
+        assertTrue(actual4);
+        assertTrue(actual5);
+        assertTrue(actual6);
+    }
 }
