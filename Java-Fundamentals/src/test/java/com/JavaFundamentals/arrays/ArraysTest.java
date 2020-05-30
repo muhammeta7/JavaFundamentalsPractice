@@ -222,4 +222,27 @@ public class ArraysTest {
         int actual3 = arrays.removeDuplicatesLength(input3);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void longestCommonPrefixTest(){
+        String[] input = {"flower", "flow", "flight"};
+        String expected = "fl";
+        String actual = arrays.longestCommonPrefix(input);
+        assertEquals(expected, actual);
+
+        String[] input1 = {"dog", "racecar", "car"};
+        String expected1 = "";
+        String actual1 = arrays.longestCommonPrefix(input1);
+        assertEquals(expected1, actual1);
+
+        String[] input2 = {"truck", "trunk", "true"};
+        String expected2 = "tru";
+        String actual2 = arrays.longestCommonPrefix(input2);
+        assertEquals(expected2, actual2);
+
+        String[] input3 = {"flower", "flow", "flown"};
+        String expected3 = "flow";
+        String actual3 = arrays.longestCommonPrefix(input3);
+        assertEquals(expected3, actual3);
+    }
 }
