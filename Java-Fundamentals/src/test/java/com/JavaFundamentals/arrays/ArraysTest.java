@@ -268,4 +268,27 @@ public class ArraysTest {
         int actual3 = arrays.removeElement(input3, 1);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void searchInsertTest(){
+        int[] input = {1,3,5,6};
+        int expected = 2;
+        int actual = arrays.searchInsert(input, 5);
+        assertEquals(expected, actual);
+
+        int[] input1 = {1,3,5,6};
+        int expected1 = 2;
+        int actual1 = arrays.searchInsert(input1, 1);
+        assertEquals(expected1, actual1);
+
+        int[] input2 = {1,3,5,6};
+        int expected2 = 4;
+        int actual2 = arrays.searchInsert(input2, 7);
+        assertEquals(expected2, actual2);
+
+        int[] input3 = {1,3,5,6};
+        int expected3 = 0;
+        int actual3 = arrays.searchInsert(input3, 0);
+        assertEquals(expected3, actual3);
+    }
 }
