@@ -291,4 +291,27 @@ public class ArraysTest {
         int actual3 = arrays.searchInsert(input3, 0);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void getMissingNumberTest(){
+        int[] input = { 1, 2, 4, 5, 6 };
+        int expected = 3;
+        int actual = arrays.getMissingNumber(input, 5);
+        assertEquals(expected, actual);
+
+        int[] input1 = { 1, 2, 3, 4, 5, 6, 7, 8, 10 };
+        int expected1 = 9;
+        int actual1 = arrays.getMissingNumber(input1, 9);
+        assertEquals(expected1, actual1);
+
+        int[] input2 = { 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14 };
+        int expected2 = 8;
+        int actual2 = arrays.getMissingNumber(input2, 13);
+        assertEquals(expected2, actual2);
+
+        int[] input3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12};
+        int expected3 = 11;
+        int actual3 = arrays.getMissingNumber(input3, 11);
+        assertEquals(expected3, actual3);
+    }
 }

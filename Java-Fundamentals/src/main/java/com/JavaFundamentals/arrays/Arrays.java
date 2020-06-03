@@ -68,4 +68,12 @@ public class Arrays {
     public int searchInsert(int[] nums, int target){
         return 0;
     }
+
+    // You are given a list of n-1 integers and these integers are in the range of 1 to n.
+    // There are no duplicates in the list.
+    // One of the integers is missing in the list. Find the missing integer.
+    public int getMissingNumber(int[] array, int n){
+        return 0;
+    }
+
 }
