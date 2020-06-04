@@ -206,11 +206,12 @@ public class Arrays {
     // One of the integers is missing in the list. Find the missing integer.
     public int getMissingNumber(int[] array, int n){
         int total = 1;
-        for (int i = 2; i <= (n + 1); i++)
-        {
+        for (int i = 2; i <= (n + 1); i++) {
             total += i;
             total -= array[i - 2];
         }
         return total;
     }
+
+
 }
