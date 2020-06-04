@@ -110,4 +110,9 @@ public class StringUtils {
         return false;
     }
 
+    // Get number of occurrences of word in an array of strings
+    public int getNumberOfOccurrences(String[] array, String value) {
+        return 0;
+    }
+
 }
