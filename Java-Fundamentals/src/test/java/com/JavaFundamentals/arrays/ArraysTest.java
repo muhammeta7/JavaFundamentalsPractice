@@ -314,4 +314,43 @@ public class ArraysTest {
         int actual3 = arrays.getMissingNumber(input3, 11);
         assertEquals(expected3, actual3);
     }
+
+    @Test
+    public void convertTo1DArrayTest0(){
+        String[][] matrix = {
+                {"a", "b", "c"},
+                {"d", "e"},
+                {"f"},
+                {"g", "h", "i", "j"}
+        };
+        String[] expected = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+        String[] actual = arrays.convertTo1DArray(matrix);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void convertTo1DArrayTest1(){
+        String[][] matrix = {
+                {"a", "b", "c"},
+                {"d", "e"},
+                {"f"}
+        };
+        String[] expected = {"a", "b", "c", "d", "e", "f"};
+        String[] actual = arrays.convertTo1DArray(matrix);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void convertTo1DArrayTest2(){
+        String[][] matrix = {
+                {"1", "2", "3"},
+                {"4", "5"},
+                {"6"},
+                {"7", "8", "9", "10"}
+        };
+        String[] expected = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+        String[] actual = arrays.convertTo1DArray(matrix);
+        assertArrayEquals(expected, actual);
+    }
+
 }

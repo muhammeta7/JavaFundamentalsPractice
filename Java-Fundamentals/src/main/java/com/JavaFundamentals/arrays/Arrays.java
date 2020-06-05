@@ -76,4 +76,7 @@ public class Arrays {
         return 0;
     }
 
+    public String[] convertTo1DArray(String[][] matrix){
+        return null;
+    }
 }
