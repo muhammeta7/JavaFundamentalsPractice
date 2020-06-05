@@ -76,6 +76,7 @@ public class Arrays {
         return 0;
     }
 
+    // Convert a 2-D array of strings into a 1-D array
     public String[] convertTo1DArray(String[][] matrix){
         return null;
     }
