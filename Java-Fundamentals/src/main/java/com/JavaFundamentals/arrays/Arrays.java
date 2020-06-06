@@ -1,8 +1,9 @@
 package com.JavaFundamentals.arrays;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
+import java.util.*;
+import java.util.stream.Stream;
+
 import static java.util.Arrays.asList;
 
 public class Arrays {
@@ -213,5 +214,11 @@ public class Arrays {
         return total;
     }
 
-
+    // Convert a 2-D array of strings into a 1-D array
+    public String[] convertTo1DArray(String[][] matrix){
+        String[] result = Stream.of(matrix)
+                .flatMap(Stream::of)
+                .toArray(String[]::new);
+        return result;
+    }
 }
