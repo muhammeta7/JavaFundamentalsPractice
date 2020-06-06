@@ -19,20 +19,16 @@ public class MapsTest {
         List<String> input = Arrays.asList("mars", "rams", "deco", "code");
         List<String> expected = Arrays.asList("deco", "mars");
         List<String> actual = maps.uniqueAnagrams(input);
-        for (int i = 0; i < expected.size(); i++) {
-            for (int j = i; j < actual.size(); j++) {
-                assertEquals(expected.get(i), actual.get(j));
-            }
+        for (int i = 0; i < actual.size(); i++) {
+            assertEquals(expected.get(i), actual.get(i));
         }
 
 
         List<String> input1 = Arrays.asList("mars","rams","loan","noal","deco","code", "fish", "animal");
         List<String> expected1 = Arrays.asList("animal","deco","fish","loan","mars");
         List<String> actual1 = maps.uniqueAnagrams(input1);
-        for (int i = 0; i < expected1.size(); i++) {
-            for (int j = i; j < actual1.size(); j++) {
-                assertEquals(expected1.get(i), actual1.get(j));
-            }
+        for (int i = 0; i < actual1.size(); i++) {
+            assertEquals(expected1.get(i), actual1.get(i));
         }
     }
 }
