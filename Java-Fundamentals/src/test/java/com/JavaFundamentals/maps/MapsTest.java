@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.JavaFundamentals.maps.Maps.numericalValue;
 import static org.junit.Assert.*;
 
 public class MapsTest {
@@ -30,5 +31,24 @@ public class MapsTest {
         for (int i = 0; i < actual1.size(); i++) {
             assertEquals(expected1.get(i), actual1.get(i));
         }
+    }
+
+    @Test
+    public void numericalValueTest(){
+        int expected = 47511;
+        int actual = numericalValue("mars");
+        assertEquals(expected, actual);
+
+        int expected1 = 31113;
+        int actual1 = numericalValue("ban");
+        assertEquals(expected1, actual1);
+
+        int expected2 = 42323;
+        int actual2 = numericalValue("code");
+        assertEquals(expected2, actual2);
+
+        int expected3 = 65488;
+        int actual3 = numericalValue("animal");
+        assertEquals(expected3, actual3);
     }
 }
