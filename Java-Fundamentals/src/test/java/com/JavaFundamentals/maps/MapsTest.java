@@ -75,4 +75,14 @@ public class MapsTest {
             assertEquals(expected.get(i), actual.get(i));
         }
     }
+
+    @Test
+    public void inventoryCountTest2(){
+        List<String> input = Arrays.asList("item", "car", "item", "car", "phone", "phone", "item");
+        List<String> expected = Arrays.asList("item", "car", "item1", "car1", "phone", "phone1", "item2");
+        List<String> actual = maps.inventoryCount(input);
+        for (int i = 0; i < input.size(); i++) {
+            assertEquals(expected.get(i), actual.get(i));
+        }
+    }
 }
