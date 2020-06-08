@@ -61,6 +61,8 @@ public class MapsTest {
         List<String> actual = maps.inventoryCount(input);
         for (int i = 0; i < input.size(); i++) {
             assertEquals(expected.get(i), actual.get(i));
+            System.out.print(expected.get(i));
+            System.out.print(actual.get(i));
         }
     }
 
