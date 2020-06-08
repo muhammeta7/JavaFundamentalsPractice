@@ -5,4 +5,6 @@ This repo is to practice java fundamentals. Exercises include the following:
 * Stacks
 * Integer manipulation
 * Different searches 
+* Maps
+
 
