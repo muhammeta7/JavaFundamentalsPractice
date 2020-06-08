@@ -36,7 +36,19 @@ public class Maps {
     // Example: ["text", "text", "text", "text]
     // should return ["text", "text1". "text2", "text3"]
     public List<String> inventoryCount(List<String> inventory){
-        return null;
+        List<String> result = new ArrayList<>();
+        Map<String, Integer> itemMap = new HashMap<>();
+        for (int i = 0; i < inventory.size(); i++) {
+            if(itemMap.containsKey(inventory.get(i))){
+                Integer counter = itemMap.get(inventory.get(i));
+                itemMap.put(inventory.get(i), counter + 1);
+                result.add(inventory.get(i) + itemMap.get(inventory.get(i)));
+            } else{
+                itemMap.put(inventory.get(i), 0);
+                result.add(inventory.get(i));
+            }
+        }
+        return result;
     }
 
 }
