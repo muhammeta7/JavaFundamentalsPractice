@@ -353,4 +353,20 @@ public class ArraysTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void minimumBridesTest0(){
+        int[] que = {2, 1, 5, 3, 4};
+        int expected = 3;
+        int actual = arrays.minimumBribes(que);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void minimumBridesTest1(){
+        int[] que = {2, 5, 1, 3, 4};
+        int expected = -1;
+        int actual = arrays.minimumBribes(que);
+        assertEquals(expected, actual);
+    }
+
 }
