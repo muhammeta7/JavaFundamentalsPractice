@@ -63,7 +63,18 @@ public class IntegerUtils {
     // day2: moe = 8 | han = 8
     // day3: moe = 11 | han = 12
     public int friendlyCompetition(int moeDaily, int hanDaily, int difference){
-        return 0;
+        if(moeDaily >= hanDaily && difference >=0){
+            return -1;
+        }
+        int moe = difference;
+        int han = 0;
+        int days = 0;
+        while(moe >= han){
+            moe += moeDaily;
+            han += hanDaily;
+            days++;
+        }
+        return days;
     }
 
 }
