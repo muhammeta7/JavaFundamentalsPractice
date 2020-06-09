@@ -26,16 +26,13 @@ public class Arrays {
     //  Return the new rotated array. For example, given Integer[] array = {5, 4, 2, 18};,
     //  calling arrays.rotate(array, 2); will move the first two
     //  numbers to the back so the returning array looks like this: {2, 18, 5, 4}.
-    public Integer[] rotate(Integer[] array, Integer index) {
-        Integer[] shifted = new Integer[array.length];
+    public Integer[] rotate(Integer[] array, Integer shift) {
+        Integer[] newArray = new Integer[array.length];
         for (int i = 0; i < array.length; i++) {
-            if(i-index < 0){
-                shifted[array.length-index+i] = array[i];
-            }else{
-                shifted[i-index] = array[i];
-            }
+            int newLocation = (i + shift) % array.length;
+            newArray[i] = array[newLocation];
         }
-        return shifted;
+        return newArray;
     }
 
     // Count the number of occurrences in 2 arrays
