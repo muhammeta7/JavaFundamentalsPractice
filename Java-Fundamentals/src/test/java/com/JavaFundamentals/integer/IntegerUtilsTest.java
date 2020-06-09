@@ -78,4 +78,34 @@ public class IntegerUtilsTest {
         assertTrue(actual5);
         assertTrue(actual6);
     }
+
+    @Test
+    public void friendlyCompetitionTest0(){
+        int moe = 3;
+        int han = 4;
+        int difference = 2;
+        int expected = 3;
+        int actual = integerUtils.friendlyCompetition(moe, han, difference);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void friendlyCompetitionTest1(){
+        int moe = 2;
+        int han = 2;
+        int difference = 0;
+        int expected = -1;
+        int actual = integerUtils.friendlyCompetition(moe, han, difference);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void friendlyCompetitionTest2(){
+        int moe = 3;
+        int han = 2;
+        int difference = 0;
+        int expected = -1;
+        int actual = integerUtils.friendlyCompetition(moe, han, difference);
+        assertEquals(expected, actual);
+    }
 }
