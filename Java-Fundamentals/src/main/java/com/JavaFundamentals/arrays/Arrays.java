@@ -95,4 +95,9 @@ public class Arrays {
         return 0;
     }
 
+    // Given an array of unsorted ints return minimum number of swaps to return the array in ascending order
+    public int minimumSwaps(int[] arr){
+        return 0;
+    }
+
 }

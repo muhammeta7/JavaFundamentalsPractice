@@ -369,4 +369,36 @@ public class ArraysTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void minimumSwapsTest0(){
+        int[] input = {4, 3, 1, 2};
+        int expected = 3;
+        int actual = arrays.minimumSwaps(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void minimumSwapsTest1(){
+        int[] input = {2, 3, 4, 1, 5};
+        int expected = 3;
+        int actual = arrays.minimumSwaps(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void minimumSwapsTest2(){
+        int[] input = {1, 2, 3, 4, 5};
+        int expected = 0;
+        int actual = arrays.minimumSwaps(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void minimumSwapsTest3(){
+        int[] input = {1, 3, 5, 2, 4, 6, 7};
+        int expected = 3;
+        int actual = arrays.minimumSwaps(input);
+        assertEquals(expected, actual);
+    }
+
 }
