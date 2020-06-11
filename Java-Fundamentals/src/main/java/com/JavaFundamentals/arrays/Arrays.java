@@ -285,6 +285,18 @@ public class Arrays {
     // f g h
     // Calculate the hourglass sum for every hourglass in the array, then print the maximum hourglass sum.
     public int hourGlassSum(int[][] arr){
-        return 0;
+        int max = Integer.MIN_VALUE;
+        int sum;
+        for (int i = 0; i <= 3 ; i++) {
+            for (int j = 0; j <= 3; j++) {
+                sum = arr[i + 1][j + 1];
+                for(int k = j; k < j + 3; k++){
+                    sum += arr[i][k] + arr[i + 2][k];
+                }
+                if(sum > max)
+                    max = sum;
+            }
+        }
+        return max;
     }
 }
