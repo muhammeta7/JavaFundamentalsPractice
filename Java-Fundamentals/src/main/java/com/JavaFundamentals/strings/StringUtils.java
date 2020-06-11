@@ -195,4 +195,16 @@ public class StringUtils {
         return s.equals(new StringBuilder(s).reverse().toString());
     }
 
+    // Given a string containing only characters A and B.
+    // Return the number of deletions to return the string with on adjacent matching characters
+    public int alternatingCharacters(String s){
+        int deletions = 0;
+        for (int i = 0; i < s.length()-1 ; i++) {
+            if(s.charAt(i) == s.charAt(i+1)){
+                deletions++;
+            }
+        }
+        return deletions;
+    }
+
 }
