@@ -115,4 +115,9 @@ public class StringUtils {
         return 0;
     }
 
+    // Given a string containing only characters A and B.
+    // Return the number of deletions to return the string with on adjacent matching characters
+    public int alternatingCharacters(String s){
+        return 0;
+    }
 }
