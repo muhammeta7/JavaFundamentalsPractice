@@ -400,4 +400,30 @@ public class ArraysTest {
         int actual = arrays.minimumSwaps(input);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void hourGlassSum0(){
+        int[][] input = { {1, 1, 1, 0, 0, 0},
+                          {0, 1, 0, 0, 0, 0},
+                          {1, 1, 1, 0, 0, 0},
+                          {0, 0, 2, 4, 4, 0},
+                          {0, 0, 0, 2, 0, 0},
+                          {0, 0, 1, 2, 4, 0}};
+        int expected = 19;
+        int actual = arrays.hourGlassSum(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void hourGlassTest1(){
+        int[][] input = { {1, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0}};
+        int expected = 1;
+        int actual = arrays.hourGlassSum(input);
+        assertEquals(expected, actual);
+    }
 }

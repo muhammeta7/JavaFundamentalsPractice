@@ -277,4 +277,14 @@ public class Arrays {
         return swapCounter;
     }
 
+    // Given a 6X6 2D-array
+    // We define an hourglass to be a subset of values with indices falling in
+    // this pattern graphical representation:
+    // a b c
+    //   d
+    // f g h
+    // Calculate the hourglass sum for every hourglass in the array, then print the maximum hourglass sum.
+    public int hourGlassSum(int[][] arr){
+        return 0;
+    }
 }
