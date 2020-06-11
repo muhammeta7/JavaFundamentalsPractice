@@ -426,4 +426,5 @@ public class ArraysTest {
         int actual = arrays.hourGlassSum(input);
         assertEquals(expected, actual);
     }
+
 }
