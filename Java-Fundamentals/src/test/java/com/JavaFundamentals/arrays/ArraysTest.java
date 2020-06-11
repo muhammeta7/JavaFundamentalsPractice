@@ -427,4 +427,30 @@ public class ArraysTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void hourGlassTest2(){
+        int[][] input = {{1, 1, 1, 0, 0, 0},
+                {0, 1, 0, 0, 0, 0},
+                {1, 1, 1, 0, 0, 0},
+                {0, 9, 2, -4, -4, 0},
+                {0, 0, 0, -2, 0, 0},
+                {0, 0, -1, -2, -4, 0}};
+        int expected = 13;
+        int actual = arrays.hourGlassSum(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void hourGlassTest3(){
+        int[][] input = {{-9, -9, -9, 1, 1, 1},
+                         {0, -9, 0, 4, 3, 2},
+                         {-9, -9, -9, 1, 2, 3},
+                         {0, 0, 8, 6, 6, 0},
+                         {0, 0, 0, -2, 0, 0},
+                         {0, 0, 1, 2, 4, 0}};
+        int expected = 28;
+        int actual = arrays.hourGlassSum(input);
+        assertEquals(expected, actual);
+    }
+
 }
