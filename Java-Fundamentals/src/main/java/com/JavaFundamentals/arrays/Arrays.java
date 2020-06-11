@@ -260,4 +260,21 @@ public class Arrays {
 
         return numOfBribes;
     }
+
+    // Given an array of unsorted ints return minimum number of swaps to return the array in ascending order
+    public int minimumSwaps(int[] arr){
+        int swapCounter = 0;
+        int temp;
+        for (int i = 0; i < arr.length; i++) {
+            if(i != arr[i]-1){
+                temp = arr[i];
+                arr[i] = arr[arr[i] - 1];
+                arr[temp - 1] = temp;
+                swapCounter++;
+                i = -1;
+            }
+        }
+        return swapCounter;
+    }
+
 }
