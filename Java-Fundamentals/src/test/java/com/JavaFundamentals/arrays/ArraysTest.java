@@ -453,4 +453,30 @@ public class ArraysTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void makingAnagramsTest0(){
+        String string1 = "cde";
+        String string2 = "abc";
+        int expected = 4;
+        int actual = arrays.makingAnagrams(string1, string2);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void makingAnagramsTest1(){
+        String string1 = "fcrxzwscanmligyxyvym";
+        String string2 = "jxwtrhvujlmrpdoqbisbwhmgpmeoke";
+        int expected = 30;
+        int actual = arrays.makingAnagrams(string1, string2);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void makingAnagramsTest2(){
+        String string1 = "showman";
+        String string2 = "woman";
+        int expected = 2;
+        int actual = arrays.makingAnagrams(string1, string2);
+        assertEquals(expected, actual);
+    }
 }
