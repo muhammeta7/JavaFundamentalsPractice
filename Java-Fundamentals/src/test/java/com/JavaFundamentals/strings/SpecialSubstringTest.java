@@ -18,4 +18,28 @@ public class SpecialSubstringTest {
         long actual = stringUtils.specialSubstringCount(input);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void test1(){
+        String input = "asasd";
+        long expected = 7;
+        long actual = stringUtils.specialSubstringCount(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test2(){
+        String input = "abcbaba";
+        long expected = 10;
+        long actual = stringUtils.specialSubstringCount(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test3(){
+        String input = "aaaa";
+        long expected = 10;
+        long actual = stringUtils.specialSubstringCount(input);
+        assertEquals(expected, actual);
+    }
 }
