@@ -207,4 +207,11 @@ public class StringUtils {
         return deletions;
     }
 
+    // A string is said to be a special string if either of two conditions is met:
+    // All of the characters are the same, e.g. aaa.
+    // All characters except the middle one are the same, e.g. aadaa.
+    public long specialSubstringCount(String input){
+        return 0l;
+    }
+
 }
