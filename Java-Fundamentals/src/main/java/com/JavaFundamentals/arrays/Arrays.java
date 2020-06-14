@@ -302,6 +302,17 @@ public class Arrays {
     // Return minimum number of deletions to make two strings anagrams
     // String contain only lowercase letters
     public int makingAnagrams(String string1, String string2){
-        return 0;
+        int[] letterCounts = new int[26];
+        for(char c : string1.toCharArray()){
+            letterCounts[c-'a']++;
+        }
+        for(char c : string2.toCharArray()){
+            letterCounts[c-'a']--;
+        }
+        int deletions = 0;
+        for(int i : letterCounts){
+            deletions += Math.abs(i);
+        }
+        return deletions;
     }
 }
