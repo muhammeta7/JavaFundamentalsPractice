@@ -298,4 +298,10 @@ public class Arrays {
         }
         return max;
     }
+
+    // Return minimum number of deletions to make two strings anagrams
+    // String contain only lowercase letters
+    public int makingAnagrams(String string1, String string2){
+        return 0;
+    }
 }
