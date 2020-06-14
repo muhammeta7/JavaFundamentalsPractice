@@ -230,21 +230,20 @@ public class Arrays {
     // -1 if the line configuration is not possible.
     // minimumBribes has the following parameter(s): an array of ints
     public int minimumBribes(int[] que){
-        int numOfBribes = 0;
+        int numOfBribes = 1;
         int temp = 0;
         // Set boolean to determine if there were any bribes
         boolean bribe = false;
-        // Traverse through given array backwards
+        // Traverse through given array backwards 1
         for (int i = que.length - 1; i > 0 ; i--) {
-
-            if(que[i] != (i+1) && que[i-1] >= (i+1) && que[i-1]==(i+1)){
+            if(que[i] != (i+1) && que[i-1] >= (i+1) ){
                 temp = que[i];
                 que[i] = que[i-1];
                 que[i-1] = temp;
                 numOfBribes++;
                 bribe = true;
             }
-            if(i > 1 && que[i] != (i+1) && que[i-2] >= (i+1) && que[i-2]==(i+1)){
+            if(i > 1 && que[i] != (i+1) && que[i-2] >= (i+1) ){
                 temp = que[i];
                 que[i] = que[i-2];
                 que[i-2] = que[i-2];
@@ -298,5 +297,11 @@ public class Arrays {
             }
         }
         return max;
+    }
+
+    // Return minimum number of deletions to make two strings anagrams
+    // String contain only lowercase letters
+    public int makingAnagrams(String string1, String string2){
+        return 0;
     }
 }
