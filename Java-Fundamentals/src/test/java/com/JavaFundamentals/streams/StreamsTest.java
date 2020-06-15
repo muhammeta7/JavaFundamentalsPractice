@@ -74,4 +74,28 @@ public class StreamsTest {
         int actual = streams.length3AndStartsWithA(input).size();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void evenOrOddTest0(){
+        List<Integer> input = Arrays.asList(2, 3, 4, 6, 7, 8, 10);
+        String expected = "2e,3o,4e,6e,7o,8e,10e";
+        String actual = streams.evenOrOdd(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void evenOrOddTest1(){
+        List<Integer> input = Arrays.asList(4, 8, 20, 30);
+        String expected = "2e,8e,20e,30e";
+        String actual = streams.evenOrOdd(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void evenOrOddTest2(){
+        List<Integer> input = Arrays.asList(3, 17, 67);
+        String expected = "3o,17o,67o";
+        String actual = streams.evenOrOdd(input);
+        assertEquals(expected, actual);
+    }
 }
