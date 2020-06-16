@@ -3,6 +3,11 @@ package com.JavaFundamentals.streams;
 import java.util.List;
 
 public class Streams {
+    // Write a method that converts all strings in a list to their upper case.
+    public List<String> upperCaseList(List<String> input){
+        return null;
+    }
+
     // Given list of integers return the average of the list
     public Double average(List<Integer> input){
         return 0.0;
