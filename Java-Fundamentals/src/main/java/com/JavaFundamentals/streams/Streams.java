@@ -22,4 +22,16 @@ public class Streams {
                 .filter(s -> s.length() == 3)
                 .collect(Collectors.toList());
     }
+
+    // Write a method that returns a comma-separated string based on a given list of integers.
+    // Each element should be preceded by the letter 'e' if the number is even, and preceded by the letter 'o'
+    // if the number is odd. For example, if the input list is (3,44), the output should be 'o3,e44'.
+    public String evenOrOdd(List<Integer> input){
+        return null;
+    }
+
+    // Given list of integers return the average of the list
+    public Double average(List<Integer> input){
+        return 0.0;
+    }
 }
