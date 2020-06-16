@@ -29,4 +29,9 @@ public class Streams {
     public String evenOrOdd(List<Integer> input){
         return null;
     }
+
+    // Given list of integers return the average of the list
+    public Double average(List<Integer> input){
+        return 0.0;
+    }
 }
