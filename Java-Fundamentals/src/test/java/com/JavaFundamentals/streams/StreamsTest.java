@@ -16,6 +16,36 @@ public class StreamsTest{
     }
 
     @Test
+    public void upperCaseListTest0(){
+        List<String> input = Arrays.asList("and", "car", "cat", "man");
+        List<String> expected = Arrays.asList("AND", "CAR", "CAT", "MAN");
+        List<String> actual = streams.upperCaseList(input);
+        for (int i = 0; i < input.size(); i++) {
+            assertEquals(expected.get(i), actual.get(i));
+        }
+    }
+
+    @Test
+    public void upperCaseListTest1(){
+        List<String> input = Arrays.asList("a", "b", "c", "d", "e");
+        List<String> expected = Arrays.asList("A", "B", "C", "D", "E");
+        List<String> actual = streams.upperCaseList(input);
+        for (int i = 0; i < input.size(); i++) {
+            assertEquals(expected.get(i), actual.get(i));
+        }
+    }
+
+    @Test
+    public void upperCaseListTest2(){
+        List<String> input = Arrays.asList("lala", "jaja", "haha");
+        List<String> expected = Arrays.asList("LALA", "JAJA", "HAHA");
+        List<String> actual = streams.upperCaseList(input);
+        for (int i = 0; i < input.size(); i++) {
+            assertEquals(expected.get(i), actual.get(i));
+        }
+    }
+
+    @Test
     public void averageTest0(){
         List<Integer> input = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
         Double expected = 5.5;
