@@ -5,6 +5,16 @@ import java.util.stream.IntStream;
 
 public class Streams {
 
+    // Given list of integers return the average of the list
+    public Double average(List<Integer> input){
+        return 0.0;
+    }
+
+    // Write a method that converts all strings in a list to their upper case.
+    public List<String> upperCaseList(List<String> input){
+        return null;
+    }
+
     // Return minimum number of deletions to make two strings anagrams
     // String contain only lowercase letters
     public int makingAnagrams(String one, String two){
@@ -30,8 +40,4 @@ public class Streams {
         return null;
     }
 
-    // Given list of integers return the average of the list
-    public Double average(List<Integer> input){
-        return 0.0;
-    }
 }
