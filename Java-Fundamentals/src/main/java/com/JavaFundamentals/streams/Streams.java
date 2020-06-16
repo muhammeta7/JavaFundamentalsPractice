@@ -3,6 +3,11 @@ package com.JavaFundamentals.streams;
 import java.util.List;
 
 public class Streams {
+    // Given list of integers return the average of the list
+    public Double average(List<Integer> input){
+        return 0.0;
+    }
+
     // Return minimum number of deletions to make two strings anagrams
     // String contain only lowercase letters
     public int makingAnagrams(String one, String two){

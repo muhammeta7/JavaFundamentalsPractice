@@ -17,6 +17,38 @@ public class StreamsTest {
     }
 
     @Test
+    public void averageTest0(){
+        List<Integer> input = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        Double expected = 5.5;
+        Double actual = streams.average(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void averageTest1(){
+        List<Integer> input = Arrays.asList(0, 100, 150, 200, 350);
+        Double expected = 160.0;
+        Double actual = streams.average(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void averageTest2(){
+        List<Integer> input = Arrays.asList(35, 47, 52, 78);
+        Double expected = 53.0;
+        Double actual = streams.average(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void averageTest3(){
+        List<Integer> input = Arrays.asList(50, 55, 60, 70);
+        Double expected = 58.75;
+        Double actual = streams.average(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void makingAnagramsTest0(){
         String one = "cde";
         String two = "abc";
