@@ -7,7 +7,10 @@ public class Streams {
 
     // Given list of integers return the average of the list
     public Double average(List<Integer> input){
-        return 0.0;
+        return input.stream()
+                .mapToInt(i -> i)
+                .average()
+                .getAsDouble();
     }
 
     // Write a method that converts all strings in a list to their upper case.
