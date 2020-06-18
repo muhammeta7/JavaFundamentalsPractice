@@ -148,7 +148,7 @@ public class StreamsTest {
     @Test
     public void evenOrOddTest1(){
         List<Integer> input = Arrays.asList(4, 8, 20, 30);
-        String expected = "2e,8e,20e,30e";
+        String expected = "4e,8e,20e,30e";
         String actual = streams.evenOrOdd(input);
         assertEquals(expected, actual);
     }
