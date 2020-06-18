@@ -3,6 +3,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static java.util.stream.Collectors.joining;
+
 public class Streams {
 
     // Given list of integers return the average of the list
@@ -42,7 +44,9 @@ public class Streams {
     // Each element should be preceded by the letter 'e' if the number is even, and preceded by the letter 'o'
     // if the number is odd. For example, if the input list is (3,44), the output should be 'o3,e44'.
     public String evenOrOdd(List<Integer> input){
-        return null;
+        return input.stream()
+                .map(i -> i % 2 == 0 ? i + "e" : i + "o")
+                .collect(joining(","));
     }
 
 }
