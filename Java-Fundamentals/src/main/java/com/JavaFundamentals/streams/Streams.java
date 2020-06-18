@@ -15,7 +15,9 @@ public class Streams {
 
     // Write a method that converts all strings in a list to their upper case.
     public List<String> upperCaseList(List<String> input){
-        return null;
+        return input.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
     }
 
     // Return minimum number of deletions to make two strings anagrams
