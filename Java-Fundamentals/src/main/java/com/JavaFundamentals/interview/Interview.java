@@ -22,16 +22,31 @@ public class Interview {
         return null;
     }
     // Find duplicate numbers in an array if it contains multiple duplicates
-
+    public int[] containsMultipleDuplicates(int[] array){
+        return null;
+    }
 
     // Remove duplicates from a given array in Java?
+    public int[] removeDuplicates(int[] array){
+        return null;
+    }
 
     // Sort integer array in place using quicksort algorithm
+    public int[] quickSort(int[] array){
+        return null;
+    }
 
     // Remove duplicates from an array in place
-
+    public int[] removeDuplicatesInPlace(int[] array){
+        return null;
+    }
     // Reverse an array in place
-
+    public int[] reverseArrayInPlace(int[] array){
+        return null;
+    }
     // Remove duplicates from array without using any libraries
+    public int[] removeDuplicatesWithoutLibs(int[] array){
+        return null;
+    }
 
 }
