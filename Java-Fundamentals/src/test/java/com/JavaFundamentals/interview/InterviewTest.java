@@ -13,9 +13,25 @@ public class InterviewTest {
     }
 
     @Test
-    public void findMissingNumberTest(){
+    public void findMissingNumberTest0(){
         int[] input = {1, 2, 3, 4, 5, 7};
         int expected = 6;
+        int actual = interview.findMissingNumber(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void findMissingNumberTest1(){
+        int[] input = {6, 1, 5, 4, 2, 8, 3};
+        int expected = 7;
+        int actual = interview.findMissingNumber(input);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void findMissingNumberTest2(){
+        int[] input = {6, 1, 5, 4, 2, 8, 7, 3, 10};
+        int expected = 9;
         int actual = interview.findMissingNumber(input);
         assertEquals(expected, actual);
     }
