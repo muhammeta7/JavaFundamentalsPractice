@@ -5,8 +5,14 @@ public class Interview {
     // Arrays
     // Find the missing number in a given integer array of 1 to 100?
     public int findMissingNumber(int[] array){
-        return 0;
+        int i, total;
+        total = (array.length + 1) * (array.length + 2) / 2;
+        for (i = 0; i < array.length; i++)
+            total -= array[i];
+        return total;
     }
+
+
 
     // Find the duplicate number on a given integer array
     public int findDuplicate(int[] array){
