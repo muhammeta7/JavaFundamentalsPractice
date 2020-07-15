@@ -3,7 +3,7 @@ package com.JavaFundamentals.interview;
 public class Interview {
 
     // Arrays
-    // Find the missing number in a given integer array of 1 to 100?
+    // Find the missing number in a given integer array of 1 to any number?
     public int findMissingNumber(int[] array){
         int i, total;
         total = (array.length + 1) * (array.length + 2) / 2;
@@ -11,8 +11,6 @@ public class Interview {
             total -= array[i];
         return total;
     }
-
-
 
     // Find the duplicate number on a given integer array
     public int findDuplicate(int[] array){
