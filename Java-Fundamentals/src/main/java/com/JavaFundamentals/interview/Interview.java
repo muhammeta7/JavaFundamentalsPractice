@@ -1,5 +1,9 @@
 package com.JavaFundamentals.interview;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Interview {
 
     // Arrays
@@ -13,7 +17,7 @@ public class Interview {
     }
 
     // Find the duplicate number on a given integer array
-    public int findDuplicate(int[] array){
+    public int findDuplicate(Integer[] nums){
         return 0;
     }
     // Find the largest and smallest number in an unsorted integer array
